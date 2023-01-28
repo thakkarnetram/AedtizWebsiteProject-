@@ -1,0 +1,825 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-Color: #fde300;
+  --secondary-Color: #111110;
+  --text-color: #ffffff;
+}
+
+/* ---------------------------************** For MOBILE View **************---------------------*/
+@media screen and (max-device-width: 900px) {
+  /*---------------Navbar Section ----------------- */
+
+  .navbar-custom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--secondary-Color) !important;
+  }
+  .navbar-brand {
+    font-weight: bolder;
+    font-size: 30px;
+    display: block;
+    margin-left: 140px !important;
+    color: var(--primary-Color);
+  }
+  .navbar-brand:hover {
+    font-weight: bolder;
+    font-size: 26px;
+    display: block;
+    margin-left: 150px !important;
+    color: var(--primary-Color);
+  }
+  .nav-item {
+    font-weight: 700;
+    display: block;
+    margin-left: 150px !important;
+    padding-top: 35px !important;
+    padding-bottom: 45px !important;
+    justify-content: center;
+    color: var(--text-color);
+  }
+  .nav-item:hover {
+    font-weight: 700;
+    display: block;
+    margin-left: 150px !important;
+    padding-top: 35px !important;
+    padding-bottom: 45px !important;
+    justify-content: center;
+    color: var(--text-color);
+  }
+  #conUs {
+    background-color: var(--primary-Color) !important;
+    padding: 10px;
+    border: none;
+    width: 155px;
+    border-radius: 6px;
+    margin-left: 110px;
+  }
+  #coUs {
+    color: var(--secondary-Color) !important;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 16px;
+    text-shadow: 0px 2px 35px black;
+  }
+  .navbar-toggler-icon {
+    color: white !important;
+  }
+
+  /*---------------Navbar Section  End----------------- */
+
+  /*---------------Home Section  Start----------------- */
+  #home {
+    height: 66vh;
+  }
+  .content {
+    text-align: center;
+  }
+
+  #text1 {
+    font-weight: bolder;
+    color: var(--primary-Color);
+    margin-top: 280px;
+    font-size: 40px;
+  }
+  #text2 {
+    font-weight: bolder;
+    color: var(--primary-Color);
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #p1 {
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  #videoBg {
+    display: none;
+  }
+
+  #mobileBg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 114%;
+    object-fit: cover;
+  }
+
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 200vh;
+    opacity: 0.6;
+    z-index: -1;
+    background-position: center;
+    background-image: url("../Assets/black.png");
+  }
+
+  .col-3 {
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+
+  #btn1 {
+    width: 220px;
+    margin-left: -20px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--primary-Color);
+    border: none !important;
+    border-radius: 7px;
+  }
+
+  /* #btn2 {
+      margin-top: 20px;
+      width: 200px;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      background-color: transparent;
+      border: 1px solid var(--text-color) !important;
+      border-radius: 7px;
+    } */
+
+  #btn1 a {
+    text-decoration: none;
+    color: var(--secondary-Color);
+    font-size: 16px;
+  }
+
+  /* #btn2 a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-size: 16px;
+    } */
+
+  /*---------------Home Section  End----------------- */
+  /*---------------Service Section  Start----------------- */
+  #services {
+    height: 11vh;
+  }
+  .imgBg {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    z-index: -1;
+    background-position: center;
+    background-image: url("../Assets/servicesbg.png");
+  }
+
+  #sTag {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--primary-Color);
+    font-weight: bolder;
+  }
+  #wTag {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: bolder;
+    padding-bottom: -50px;
+  }
+  #pc {
+    display: none;
+  }
+
+  h4.card-head {
+    font-weight: 800;
+    color: var(--primary-Color) !important;
+  }
+  p.card-text {
+    font-weight: 700;
+  }
+
+  /*---------------Service Section  End----------------- */
+
+  /*---------------Portfolio Section Start---------------- */
+  #portFolio {
+    height: fit-content;
+    background-color: var(--secondary-Color);
+  }
+  div.heading {
+    color: var(--primary-Color);
+    font-weight: 800;
+    font-size: 26px;
+    padding: 50px;
+    text-align: center;
+  }
+  h5.sub-heading {
+    color: var(--text-color);
+    text-align: start;
+    font-weight: 600;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .video-container .video {
+    height: 23rem;
+    width: 25rem;
+    margin: 2rem;
+    overflow: hidden;
+  }
+  .video-container .video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .video-container .video video:hover {
+    transition: 0.5s linear !important;
+    transform: scale(1.3);
+  }
+
+  div.gallery img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+  /*---------------Portfolio Section End---------------- */
+  /*--------------Service Brief Section Start ----------------- */
+  .imgPC {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    background-position: center;
+    background-image: url("../Assets/brief/bgService.jpeg");
+  }
+  .imageblack {
+    position: absolute;
+    width: 100%;
+    height: 115%;
+    opacity: 0.7;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Assets/black.png");
+  }
+  .brief-head {
+    padding-top: 35px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 800;
+    text-align: center;
+    color: var(--primary-Color);
+  }
+  .brief-sub-head {
+    font-size: 24px;
+    padding-left: 10px;
+    display: inline-block;
+    font-weight: 700;
+    color: var(--text-color);
+  }
+  #serviceBrief {
+    height: fit-content;
+  }
+  .for-pc {
+    display: none;
+  }
+  .icons-mobile {
+    margin: 16px;
+    padding-bottom: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  .co-head {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary-Color);
+  }
+  .su-head {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  /*--------------Service Brief Section End----------------- */
+  /*--------------Contact Section Start----------------- */
+  #contact {
+    height: 45vh;
+    background-color: var(--secondary-Color);
+  }
+  .contact-us {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-Color);
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 800;
+  }
+
+  #forDesktop {
+    display: none;
+  }
+
+  .icon-cog {
+    color: white !important;
+    padding-right: 20px;
+  }
+
+  .emails {
+    left: 15px;
+    top: 30px;
+    position: relative;
+    text-align: center !important;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  .socials {
+    left: 15px;
+    font-size: 18px;
+    position: relative;
+    top: 65px;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+  }
+  /*--------------Contact Section End----------------- */
+  /*--------------Footer  Start----------------- */
+  #footer {
+    height: 10vh;
+    background-color: #000000;
+  }
+  .footer-text {
+    font-size: 15px;
+    position: relative;
+    top: 25px;
+    left: 15px;
+    color: var(--text-color);
+  }
+  .footer-head {
+    position: relative;
+    top: 25px;
+    left: 15px;
+    font-weight: 800;
+    color: var(--primary-Color);
+    font-size: 17px;
+  }
+  /*--------------Footer  End----------------- */
+}
+
+/* ---------------------------************** For DESKTOP View **************---------------------*/
+@media screen and (min-width: 1024px) {
+  #home {
+    height: 78.7vh;
+  }
+  .navbar-custom {
+    padding: 25px;
+    background-color: var(--secondary-Color) !important;
+  }
+
+  .navbar-brand {
+    font-weight: bolder;
+    font-size: 30px;
+    display: block;
+    margin-left: 160px !important;
+    color: var(--primary-Color);
+  }
+  .navbar-brand:hover {
+    font-weight: bolder;
+    font-size: 30px;
+    display: block;
+    margin-left: 160px !important;
+    color: var(--primary-Color);
+  }
+  .navbar-nav a {
+    color: var(--text-color) !important;
+  }
+  .nav-item {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-right: 130px !important;
+    justify-content: center;
+    color: var(--text-color);
+  }
+  .nav-item:hover {
+    text-decoration: underline;
+    transition: 1s all;
+    font-weight: 700;
+    display: block;
+    margin-right: 130px !important;
+    justify-content: center;
+    color: var(--primary-Color) !important;
+  }
+  #conUs {
+    background-color: var(--primary-Color) !important;
+    padding: 10px;
+    border: none;
+    width: 155px;
+    border-radius: 6px;
+    margin-right: 35px;
+  }
+  #conUs:hover {
+    transition: 0.6s all;
+    background-color: #fdd580 !important;
+    padding: 10px;
+    border: none;
+    width: 155px;
+    border-radius: 6px;
+    margin-right: 35px;
+  }
+  #coUs {
+    color: var(--secondary-Color) !important;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 16px;
+    text-shadow: 0px 2px 30px black;
+  }
+  /*---------------Navbar Section  End----------------- */
+
+  /*---------------Home Section  Start----------------- */
+  .content {
+    text-align: center;
+  }
+
+  #text1 {
+    font-weight: bolder;
+    color: var(--primary-Color);
+    margin-top: 300px;
+    margin-right: 1380px;
+    font-size: 66px;
+  }
+  #text2 {
+    font-weight: bolder;
+    color: var(--primary-Color);
+    margin-right: 1090px;
+    font-size: 66px;
+  }
+  #p1 {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin-right: 1270px;
+    margin-top: 20px;
+  }
+  #videoBg {
+    position: absolute !important;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    top: 0;
+    min-width: 100%;
+    min-height: auto;
+    width: 100vh;
+    height: auto;
+    z-index: -1;
+  }
+
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 109.3vh;
+    opacity: 0.81;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Assets/black.png");
+  }
+
+  .col-3 {
+    padding: 20px;
+    margin-left: 100px;
+  }
+
+  #btn1 {
+    width: 200px;
+    padding: 14px;
+    margin-right: 250px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--primary-Color);
+    border: none !important;
+    border-radius: 7px;
+  }
+  #btn1:hover {
+    margin-right: 250px;
+    width: 200px;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fdd580;
+    transition: 0.7s all;
+    border: none !important;
+    border-radius: 7px;
+  }
+  #btn1 a {
+    text-decoration: none;
+    color: var(--secondary-Color);
+    font-size: 20px;
+  }
+
+  #mobileBg {
+    display: none;
+  }
+
+  /*---------------Home Section  End----------------- */
+  /*---------------Service Section  Start----------------- */
+
+  #services {
+    height: 100vh;
+  }
+  .imgBg {
+    position: absolute;
+    width: 100%;
+    height: 83vh;
+    object-fit: cover;
+    z-index: -1;
+    background-position: center;
+    background-image: url("../Assets/servicesbg.png");
+  }
+  #sTag {
+    font-size: 1.8rem;
+    padding-top: 170px;
+    text-align: center;
+    color: var(--primary-Color);
+    font-weight: bolder;
+  }
+  #wTag {
+    font-size: 1.8rem !important;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bolder;
+  }
+  #mobile {
+    display: none;
+  }
+  div.card {
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 80px;
+  }
+  img.card-img-top {
+    transform: scale(0.9);
+  }
+  img.card-img-top:hover {
+    transform: scale(0.8);
+    transition: 0.6s all;
+  }
+  h4.card-head {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+    color: #ffb800 !important;
+  }
+  p.card-text {
+    text-align: center;
+    font-weight: 700;
+  }
+  /*---------------Service Section  End----------------- */
+  /*---------------Portfolio Section  Start----------------- */
+  #portFolio {
+    height: 460vh;
+    background-color: var(--secondary-Color);
+  }
+  div.heading {
+    color: var(--primary-Color);
+    font-weight: 800;
+    font-size: 32px;
+    padding: 120px;
+    text-align: center;
+  }
+  h5.sub-heading {
+    padding-bottom: 30px;
+    color: var(--text-color);
+    text-align: start;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .video-container .video {
+    height: 28rem;
+    width: 25rem;
+    margin: 2rem;
+    overflow: hidden;
+  }
+
+  .video-container .video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .video-container .video video:hover {
+    transition: 0.5s linear !important;
+    transform: scale(1.3);
+  }
+  .video-container .video .active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    height: auto;
+    width: 80%;
+  }
+  .video-container .video .active:hover {
+    transition: none !important;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  div.gallery img {
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 45%;
+    height: auto;
+  }
+
+  /*---------------Portfolio Section  End----------------- */
+  /*--------------Service Brief Section Start ----------------- */
+  #serviceBrief {
+    height: 100vh;
+  }
+  .imgPC {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    background-position: center;
+    background-image: url("../Assets/brief/bgService.jpeg");
+  }
+  .imageblack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Assets/black.png");
+  }
+  .brief-head {
+    padding-left: 800px;
+    padding-top: 160px;
+    padding-bottom: 30px;
+    font-size: 36px;
+    display: inline-block;
+    font-weight: 800;
+    text-align: center;
+    color: var(--primary-Color);
+  }
+  .brief-sub-head {
+    font-size: 32px;
+    padding-left: 10px;
+    display: inline-block;
+    font-weight: 800;
+    color: var(--text-color);
+  }
+  .icons-pc {
+    margin: 23px;
+    width: 130px;
+    height: 120px;
+  }
+  .for-mobile {
+    display: none;
+  }
+  .co-head {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--primary-Color);
+  }
+  .su-head {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text-color);
+  }
+  #mid {
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  /*--------------Service Brief Section End----------------- */
+  /*--------------Contact Section Start----------------- */
+  #contact {
+    height: 30vh;
+    background-color: var(--secondary-Color);
+  }
+
+  #forMobile {
+    display: none;
+  }
+  .contact-us {
+    padding-top: 45px;
+    font-size: 28px;
+    text-align: center;
+    color: var(--primary-Color);
+    font-weight: 700;
+  }
+
+  .icon-cog {
+    color: white !important;
+    padding-right: 20px;
+  }
+  .emails {
+    position: relative;
+    margin-left: 500px;
+    color: white;
+    top: 35px;
+    text-decoration: none;
+  }
+  .emails:hover {
+    transition: 0.8s all;
+    color: var(--primary-Color);
+    text-decoration: underline;
+  }
+  .socials {
+    position: relative;
+    top: 35px;
+    margin-left: 200px;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+  }
+  .socials:hover {
+    transition: 0.8s all;
+    color: var(--primary-Color);
+    text-decoration: underline;
+  }
+
+  /*--------------Contact Section End----------------- */
+  /*--------------Footer  Start----------------- */
+  #footer {
+    height: 7vh;
+    background-color: #000000;
+  }
+  .footer-text {
+    font-size: 15px;
+    position: relative;
+    top: 25px;
+    left: 780px;
+    color: var(--text-color);
+  }
+  .footer-head {
+    position: relative;
+    top: 25px;
+    left: 780px;
+    font-weight: 800;
+    color: var(--primary-Color);
+    font-size: 17px;
+  }
+  /*--------------Footer  End----------------- */
+}
+
+.navbar-custom {
+  background-color: var(--secondary-Color) !important;
+}
+
+.navbar-brand {
+  display: block;
+  margin-left: 120px;
+  color: var(--primary-Color);
+}
+
+.nav-item {
+  display: block;
+  margin-right: 100px;
+  color: var(--text-color);
+}
+
+#videoBg {
+  position: fixed;
+  z-index: -1;
+}
